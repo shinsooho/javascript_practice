@@ -5,12 +5,19 @@
 <title> while문 </title>
 <style>
 	*{margin: 0;}
-	.blue{color: #00f;}
+	.blue{color: rgb(0, 0, 255);}
 	.red{color: #f00;}
 </style>
 <script>
 	var i = 20;
-
+	while(i >= 10){
+		if(i % 2 == 0){
+			document.write("<p style=\"color:blue\">" + i + "</p>");
+		}else{
+			document.write("<p style=\"color:red\">" + i + "</p>");
+		}
+		i--;
+	}
 </script>
 </head>
 <body>

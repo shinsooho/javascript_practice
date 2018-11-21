@@ -4,9 +4,23 @@
 <meta charset="UTF-8">
 <title> 중첩 if문 </title>
 <script>
-	var id = "easy1004";
-	var pw = "112233";
+	var id = "soojoon9200";
+	var pw = "tlstngh1!";
 
+	var user_id = prompt("ID","");
+	var user_pw = prompt("PASSWORD","");
+
+	if(id == user_id){
+		if(pw == user_pw){
+			alert(id + "님 환영합니다");
+		}else{
+			alert("비밀번호 틀림");
+			location.reload();
+		}
+	}else{
+		alert("아이디가 틀리잖아");
+		location.reload();
+	}
 </script>
 </head>
 <body>

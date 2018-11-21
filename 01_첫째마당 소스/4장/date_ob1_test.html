@@ -4,8 +4,30 @@
 	<meta charset = "UTF-8">
 	<title> 날짜 정보 객체 </title>
 	<script>
+		var today = new Date();
+		var nowMonth = today.getMonth();
+		var nowDate = today.getDate();
+		var nowDay = today.getDay();
+		
+		
 
+		document.write("<h1>오늘의 날씨 정보</h1>");
+		document.write("현재 월: " + nowMonth + "<br>");
+		document.write("현재 일: " + nowDate + "<br>");
+		document.write("현재 요일: " + nowDay + "<br>");
+		
+
+		var worldCup = new Date(2002,4,31);
+		var theMonth = worldCup.getMonth();
+		var theDate = worldCup.getDate();
+		var theDay = worldCup.getDay();
+
+		document.write("<h1>2002월드컵의 날씨 정보</h1>");
+		document.write("2002월드컵 월: " + theMonth + "<br>");
+		document.write("2002월드컵 일: " + theDate + "<br>");
+		document.write("2002월드컵 요일: " + theDay + "<br>");
 	</script>
+
 </head>
 <body>
 </body>

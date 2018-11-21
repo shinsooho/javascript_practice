@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt("몇단","");
+        
+
+        document.write("<table style='border:1px black'>");
+        for(var i =1; i <= a; i++){
+            document.write("<tr style='text-align:center'>" + "<td colspan='9'>"+ i + "단"+"</td>"+ "</tr>");
+            document.write("<tr>");
+            
+                for (var k =1 ; k <=9; k++){
+                document.write("<td>" + i + "x" + k + "=" + i*k + "</td>" );
+                }
+            
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>
