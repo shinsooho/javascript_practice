@@ -12,7 +12,24 @@
 <body>
     <h1>일정 시간 간격으로 값 증감시키기</h1>
     <p> 콘솔 패널을 열어 확인하세요.</p>
-   <button onclick="clearInterval(auto_1)">증가 정지</button>
-   <button onclick="clearInterval(auto_2)">감소 정지</button>
+
+    <script>
+        var addNum = 0;
+        var subNum = 1000;    
+
+        var auto_01 = setInterval(function(){
+            addNum++;
+            console.log("addNum:" + addNum);
+        },3000);
+
+        var auto_02 = setInterval(function(){
+            subNum--;
+            console.log("subNum:" + subNum);
+        },3000);
+    </script>
+    
+
+   <button onclick="clearInterval(auto_01)">증가 정지</button>
+   <button onclick="clearInterval(auto_02)">감소 정지</button>
 </body>
 </html>
